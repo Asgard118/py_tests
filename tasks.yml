@@ -1,0 +1,115 @@
+task_types:
+  - name: Generic
+    shortName: gener
+    icon: task_alt
+
+  - name: Art
+    shortName: art
+    icon: palette
+
+  - name: Modeling
+    shortName: mdl
+    icon: language
+
+  - name: Texture
+    shortName: tex
+    icon: brush
+
+  - name: Lookdev
+    shortName: look
+    icon: ev_shadow
+
+  - name: Rigging
+    shortName: rig
+    icon: construction
+
+  - name: Edit
+    shortName: edit
+    icon: imagesearch_roller
+
+  - name: Layout
+    shortName: lay
+    icon: nature_people
+
+  - name: Setdress
+    shortName: dress
+    icon: scene
+
+  - name: Animation
+    shortName: anim
+    icon: directions_run
+
+  - name: FX
+    shortName: fx
+    icon: fireplace
+
+  - name: Lighting
+    shortName: lgt
+    icon: highlight
+
+  - name: Paint
+    shortName: paint
+    icon: video_stable
+
+  - name: Compositing
+    shortName: comp
+    icon: layers
+
+  - name: Roto
+    shortName: roto
+    icon: gesture
+
+  - name: Matchmove
+    shortName: matchmove
+    icon: switch_video
+
+# states: not_started, in_progress, done, blocked
+statuses:
+  - name: Not ready
+    shortName: NRD
+    state: not_started
+    icon: fiber_new
+    color: "#434a56"
+
+  - name: Ready to start
+    shortName: RDY
+    state: not_started
+    icon: timer
+    color: "#bababa"
+
+  - name: In progress
+    shortName: PRG
+    state: in_progress
+    icon: play_arrow
+    color: "#3498db"
+
+  - name: Pending review
+    shortName: RVW
+    state: in_progress
+    icon: visibility
+    color: "#ff9b0a"
+
+  - name: Approved
+    shortName: APP
+    state: done
+    icon: task_alt
+    color: "#00f0b4"
+
+  - name: On hold
+    shortName: HLD
+    state: blocked
+    icon: back_hand
+    color: "#fa6e46"
+
+  - name: Omitted
+    shortName: OMT
+    state: blocked
+    icon: block
+    color: "#cb1a1a"
+
+  - name: Pending Review
+    shortName: PRW
+    state: blocked
+    icon: block
+    color: "#ff0000"
+

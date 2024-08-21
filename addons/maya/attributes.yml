@@ -1,0 +1,9 @@
+- name: "mayaAttr"
+  position: 0
+  scope:
+    - folder
+    - task
+    - user
+  data:
+    type: "string"
+    title: "test"

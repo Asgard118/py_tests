@@ -1,0 +1,28 @@
+- name: Folder
+  short_name: fld
+  icon: folder
+
+- name: Library
+  short_name: lib
+  icon: category
+
+- name: Asset
+  short_name: ast
+  icon: smart_toy
+
+- name: Episode
+  short_name: ep
+  icon: live_tv
+
+- name: Sequence
+  short_name: sq
+  icon: theaters
+
+- name: Shot
+  short_name: sh
+  icon: movie
+
+- name: Tools
+  short_name: tls
+
+

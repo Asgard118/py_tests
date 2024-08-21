@@ -1,0 +1,1769 @@
+{
+  "general": {
+    "menu": {
+      "create": "ctrl+alt+c",
+      "publish": "ctrl+alt+p",
+      "load": "ctrl+alt+l",
+      "manage": "ctrl+alt+m",
+      "build_workfile": "ctrl+alt+b"
+    }
+  },
+  "imageio": {
+    "activate_host_color_management": true,
+    "ocio_config": {
+      "override_global_config": false,
+      "filepath": []
+    },
+    "file_rules": {
+      "activate_host_rules": false,
+      "rules": []
+    },
+    "viewer": {
+      "viewerProcess": "ACES/sRGB",
+      "output_transform": "ACES/sRGB"
+    },
+    "baking": {
+      "viewerProcess": "ACES/Rec.709",
+      "output_transform": "ACES/Rec.709"
+    },
+    "workfile": {
+      "color_management": "OCIO",
+      "native_ocio_config": "aces_1.2",
+      "working_space": "role_scene_linear",
+      "monitor_lut": "ACES/sRGB",
+      "monitor_out_lut": "ACES/sRGB",
+      "int_8_lut": "role_matte_paint",
+      "int_16_lut": "role_texture_paint",
+      "log_lut": "role_compositing_log",
+      "float_lut": "role_scene_linear"
+    },
+    "nodes": {
+      "required_nodes": [
+        {
+          "plugins": [
+            "CreateWriteRender"
+          ],
+          "knobs": [
+            {
+              "text": "exr",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "file_type",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "16 bit half",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "datatype",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "Zip (1 scanline)",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "compression",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "autocrop",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                186,
+                35,
+                35
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "color_gui",
+              "name": "tile_color",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "rgb",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "channels",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "scene_linear",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "colorspace",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "create_directories",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            }
+          ],
+          "nuke_node_class": "Write"
+        },
+        {
+          "plugins": [
+            "CreateWritePrerender"
+          ],
+          "knobs": [
+            {
+              "text": "exr",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "file_type",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "16 bit half",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "datatype",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "Zip (1 scanline)",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "compression",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "autocrop",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                171,
+                171,
+                10
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "color_gui",
+              "name": "tile_color",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "rgb",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "channels",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "scene_linear",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "colorspace",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "create_directories",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            }
+          ],
+          "nuke_node_class": "Write"
+        },
+        {
+          "plugins": [
+            "CreateWriteImage"
+          ],
+          "knobs": [
+            {
+              "text": "tiff",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "file_type",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "16 bit",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "datatype",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "Deflate",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "compression",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                56,
+                162,
+                7
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "color_gui",
+              "name": "tile_color",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "rgb",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "channels",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "texture_paint",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "colorspace",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "create_directories",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            }
+          ],
+          "nuke_node_class": "Write"
+        }
+      ],
+      "override_nodes": []
+    },
+    "regex_inputs": {
+      "inputs": [
+        {
+          "regex": "(beauty).*(?=.exr)",
+          "colorspace": "linear"
+        }
+      ]
+    }
+  },
+  "dirmap": {
+    "paths": {
+      "source_path": [],
+      "destination_path": []
+    },
+    "enabled": false
+  },
+  "scriptsmenu": {
+    "definition": [
+      {
+        "type": "action",
+        "command": "import webbrowser;webbrowser.open(url='https://ayon.ynput.io/docs/addon_nuke_artist')",
+        "sourcetype": "python",
+        "title": "Ayon Nuke Docs",
+        "tooltip": "Open the Ayon Nuke user doc page"
+      },
+      {
+        "type": "action",
+        "command": "from openpype.hosts.nuke.startup.frame_setting_for_read_nodes import main;main();",
+        "sourcetype": "python",
+        "title": "Set Frame Start (Read Node)",
+        "tooltip": "Set frame start for read node(s)"
+      },
+      {
+        "type": "action",
+        "command": "from openpype.hosts.nuke.startup.custom_write_node import main;main();",
+        "sourcetype": "python",
+        "title": "Set non publish output for Write Node",
+        "tooltip": "Open the OpenPype Nuke user doc page"
+      }
+    ],
+    "name": "Custom Tools"
+  },
+  "gizmo": [
+    {
+      "gizmo_definition": [
+        {
+          "sub_gizmo_list": [
+            {
+              "title": "Gizmo Note",
+              "sourcetype": "python",
+              "command": "nuke.nodes.StickyNote(label='You can create your own toolbar menu in the Nuke GizmoMenu of OpenPype')",
+              "icon": "",
+              "shortcut": ""
+            }
+          ],
+          "gizmo_toolbar_path": "/path/to/menu"
+        }
+      ],
+      "toolbar_menu_name": "OpenPype Gizmo",
+      "gizmo_source_dir": {
+        "windows": [],
+        "linux": [],
+        "darwin": []
+      },
+      "toolbar_icon_path": {
+        "windows": "",
+        "linux": "",
+        "darwin": ""
+      }
+    }
+  ],
+  "create": {
+    "CreateWriteRender": {
+      "default_variants": [
+        "Main",
+        "Mask"
+      ],
+      "instance_attributes": [
+        "reviewable",
+        "farm_rendering"
+      ],
+      "exposed_knobs": [],
+      "prenodes": [
+        {
+          "nodeclass": "Reformat",
+          "dependent": "",
+          "knobs": [
+            {
+              "text": "none",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "text",
+              "name": "resize",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            },
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": true,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "",
+              "type": "boolean",
+              "name": "black_outside",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            }
+          ],
+          "name": "Reformat01"
+        }
+      ],
+      "temp_rendering_path_template": "{work}/renders/nuke/{product[name]}/{product[name]}.{frame}.{ext}"
+    },
+    "CreateWritePrerender": {
+      "default_variants": [
+        "Key01",
+        "Bg01",
+        "Fg01",
+        "Branch01",
+        "Part01"
+      ],
+      "instance_attributes": [
+        "farm_rendering",
+        "use_range_limit"
+      ],
+      "exposed_knobs": [],
+      "prenodes": [],
+      "temp_rendering_path_template": "{work}/renders/nuke/{product[name]}/{product[name]}.{frame}.{ext}"
+    },
+    "CreateWriteImage": {
+      "default_variants": [
+        "StillFrame",
+        "MPFrame",
+        "LayoutFrame"
+      ],
+      "instance_attributes": [
+        "use_range_limit"
+      ],
+      "exposed_knobs": [],
+      "prenodes": [
+        {
+          "nodeclass": "FrameHold",
+          "dependent": "",
+          "knobs": [
+            {
+              "text": "",
+              "color_gui": [
+                0,
+                0,
+                255
+              ],
+              "boolean": false,
+              "number": 0,
+              "decimal_number": 0,
+              "color": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "expression": "parent.first",
+              "type": "expression",
+              "name": "first_frame",
+              "vector_2d": {
+                "x": 1,
+                "y": 1
+              },
+              "vector_3d": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "box": {
+                "x": 1,
+                "y": 1,
+                "r": 1,
+                "t": 1
+              },
+              "formatable": {
+                "template": "",
+                "to_type": "Text"
+              }
+            }
+          ],
+          "name": "FrameHold01"
+        }
+      ],
+      "temp_rendering_path_template": "{work}/renders/nuke/{product[name]}/{product[name]}.{ext}"
+    }
+  },
+  "publish": {
+    "CollectInstanceData": {
+      "sync_workfile_version_on_product_types": [
+        "nukenodes",
+        "camera",
+        "gizmo",
+        "source",
+        "render",
+        "write"
+      ]
+    },
+    "ValidateCorrectAssetContext": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ValidateContainers": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ValidateKnobs": {
+      "knobs": "{\n    \"render\": {\n        \"review\": true\n    }\n}",
+      "enabled": false
+    },
+    "ValidateOutputResolution": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ValidateGizmo": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ValidateBackdrop": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ValidateScriptAttributes": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    },
+    "ExtractReviewData": {
+      "enabled": false
+    },
+    "ExtractReviewDataLut": {
+      "enabled": false
+    },
+    "ExtractReviewDataMov": {
+      "outputs": [
+        {
+          "read_raw": false,
+          "viewer_process_override": "",
+          "bake_viewer_process": true,
+          "bake_viewer_input_process": true,
+          "extension": "mov",
+          "add_custom_tags": [],
+          "name": "baking",
+          "filter": {
+            "task_types": [],
+            "product_types": [],
+            "product_names": []
+          },
+          "reformat_nodes_config": {
+            "enabled": false,
+            "reposition_nodes": [
+              {
+                "node_class": "Reformat",
+                "knobs": [
+                  {
+                    "type": "text",
+                    "name": "type",
+                    "text": "to format",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "format",
+                    "text": "HD_1080",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "filter",
+                    "text": "Lanczos6",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "boolean",
+                    "name": "black_outside",
+                    "text": "",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": true,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "boolean",
+                    "name": "pbb",
+                    "text": "",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "enabled": false,
+      "viewer_lut_raw": false
+    },
+    "ExtractReviewIntermediates": {
+      "outputs": [
+        {
+          "read_raw": false,
+          "viewer_process_override": "",
+          "bake_viewer_process": true,
+          "bake_viewer_input_process": true,
+          "extension": "mov",
+          "add_custom_tags": [],
+          "name": "baking",
+          "filter": {
+            "task_types": [],
+            "product_types": [],
+            "product_names": []
+          },
+          "reformat_nodes_config": {
+            "enabled": false,
+            "reposition_nodes": [
+              {
+                "node_class": "Reformat",
+                "knobs": [
+                  {
+                    "type": "text",
+                    "name": "type",
+                    "text": "to format",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "format",
+                    "text": "HD_1080",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "text",
+                    "name": "filter",
+                    "text": "Lanczos6",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "boolean",
+                    "name": "black_outside",
+                    "text": "",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": true,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  },
+                  {
+                    "type": "boolean",
+                    "name": "pbb",
+                    "text": "",
+                    "color_gui": [
+                      0,
+                      0,
+                      255
+                    ],
+                    "boolean": false,
+                    "number": 0,
+                    "decimal_number": 0,
+                    "vector_2d": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "vector_3d": {
+                      "x": 1,
+                      "y": 1,
+                      "z": 1
+                    },
+                    "color": [
+                      0,
+                      0,
+                      1,
+                      1
+                    ],
+                    "box": {
+                      "x": 1,
+                      "y": 1,
+                      "r": 1,
+                      "t": 1
+                    },
+                    "formatable": {
+                      "template": "",
+                      "to_type": "Text"
+                    },
+                    "expression": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "enabled": true,
+      "viewer_lut_raw": false
+    },
+    "ExtractSlateFrame": {
+      "key_value_mapping": {
+        "f_submission_note": {
+          "enabled": true,
+          "template": "{comment}"
+        },
+        "f_submitting_for": {
+          "enabled": true,
+          "template": "{intent[value]}"
+        },
+        "f_vfx_scope_of_work": {
+          "enabled": false,
+          "template": ""
+        }
+      },
+      "viewer_lut_raw": false
+    },
+    "IncrementScriptVersion": {
+      "enabled": true,
+      "optional": true,
+      "active": true
+    }
+  },
+  "load": {
+    "LoadImage": {
+      "representations_include": [],
+      "enabled": true,
+      "node_name_template": "{class_name}_{ext}"
+    },
+    "LoadClip": {
+      "representations_include": [],
+      "options_defaults": {
+        "start_at_workfile": true,
+        "add_retime": true
+      },
+      "enabled": true,
+      "node_name_template": "{class_name}_{ext}"
+    }
+  },
+  "workfile_builder": {
+    "custom_templates": [],
+    "builder_on_start": false,
+    "profiles": [],
+    "create_first_version": false
+  },
+  "templated_workfile_build": {
+    "profiles": []
+  },
+  "__pinned_fields__": [
+    [
+      "dirmap",
+      "enabled"
+    ]
+  ]
+}
