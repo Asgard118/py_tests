@@ -1,3 +1,0 @@
-templates:
-  version_padding: 4
-  version: "vv{version:0>{@version_padding}}"

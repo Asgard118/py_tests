@@ -1,6 +1,0 @@
-- name: "test"
-  scope:
-    - project
-  data:
-    type: "string"
-    title: "aaaaaaaaaaaaaa"

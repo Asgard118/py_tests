@@ -1,6 +1,0 @@
-roots:
-  name: "from_repo"
-  darwin: "/draft/test"
-  linux: "/mnt/share/projects"
-  windows: "C:/morg"
-
